@@ -1,0 +1,11 @@
+{
+  "name": "kira-back-end",
+  "version": "1.0.0",
+  "description": "Projeto desenvolvido para o Hackathon Hack das Minas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Equipe Atena",
+  "license": "ISC"
+}
