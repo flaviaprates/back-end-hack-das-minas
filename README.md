@@ -113,7 +113,7 @@ O retorno segue o exemplo abaixo:
 
 ---
 
-#### 5. `Obter as informações da usuária - GET` https://api-hack-das-minas.herokuapp.com/points
+#### 5. `Obter as informações da usuária - GET` https://api-hack-das-minas.herokuapp.com/info
 
 Nesse endpoint você pode obter as informações cadastradas da usuária logada.
 
