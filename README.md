@@ -4,7 +4,7 @@
 
 Para a utilização dessa `API` é indispensável instalar todas as bibliotecas que foram utilizadas no projeto com o `npm install` e para dar start no projeto basta rodar `npm run dev` no terminal.
 
-Essa `API` possui uma rota para `cadastrar usuárias`, para `login`, para `obter dados da usuária`, para `cadastrar pontos` e para `obter o total de pontos`.
+Essa `API` possui uma rota para `cadastrar usuárias`, para `login`, para `obter dados da usuária`, para `cadastrar as informações da usuária`, para `obter as informações`, para `cadastrar pontos` e para `obter o total de pontos`.
 
 Abaixo estão os exemplos de uso de cada rota.
 
@@ -89,7 +89,52 @@ Não tem requisição no `body` e o retorno segue o exemplo abaixo:
 
 ---
 
-#### 4. `Cadastrar pontos - PUT` https://api-hack-das-minas.herokuapp.com/register/points
+#### 4. `Cadastrar as informações da usuária - POST` https://api-hack-das-minas.herokuapp.com/register/info
+
+Nesse endpoint você pode cadastrar as informações da usuária logada. Para isso você deve passar no `body` as propriedades como no exemplo abaixo:
+
+```json=
+{
+	"last_period": "2000/01/01",
+	"period_length": "5",
+	"intensity": "leve",
+	"cycle_length": "21",
+	"birth_control_method": false
+}
+```
+
+O retorno segue o exemplo abaixo:
+
+```json=
+{
+	"message": "Informações cadastradas com sucesso!"
+}
+```
+
+---
+
+#### 5. `Obter as informações da usuária - GET` https://api-hack-das-minas.herokuapp.com/points
+
+Nesse endpoint você pode obter as informações cadastradas da usuária logada.
+
+Não tem requisição no `body` e o retorno segue o exemplo abaixo:
+
+```json=
+{
+	"id": 1,
+	"last_period": "2000-01-01T00:00:00.000Z",
+	"period_length": 5,
+	"intensity": "leve",
+	"cycle_length": 21,
+	"birth_control_method": false,
+	"user_id": 1,
+	"user": "Flávia"
+}
+```
+
+---
+
+#### 6. `Cadastrar pontos - PUT` https://api-hack-das-minas.herokuapp.com/register/points
 
 Nesse endpoint você pode cadastrar pontos para a usuária logada. São registrados 100 pontos por ver.
 
@@ -103,7 +148,7 @@ Não tem requisição no `body` e o retorno segue o exemplo abaixo:
 
 ---
 
-#### 5. `Obter o total de pontos - GET` https://api-hack-das-minas.herokuapp.com/points
+#### 7. `Obter o total de pontos - GET` https://api-hack-das-minas.herokuapp.com/points
 
 Nesse endpoint você pode obter o total de pontos da usuária logada.
 
