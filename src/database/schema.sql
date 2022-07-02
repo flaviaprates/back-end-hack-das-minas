@@ -12,12 +12,5 @@ CREATE TABLE users(
   	password TEXT NOT NULL,
     legal_guardian_name TEXT,
     legal_guardian_email TEXT,
-    points INTEGER NOT NULL DEFAULT 0
+    points INTEGER DEFAULT 0
 );
-
--- DROP TABLE IF EXISTS calendar_info;
-
--- CREATE TABLE calendar_info(
--- 	id SERIAL PRIMARY KEY,
---     date DATE NOT NULL
--- );
