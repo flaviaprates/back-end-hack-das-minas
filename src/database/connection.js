@@ -1,15 +1,11 @@
 const knex = require('knex')({
     client: 'pg',
     connection: {
-        // host: process.env.DB_HOST,
-        host: "ec2-54-165-178-178.compute-1.amazonaws.com",
+        host: "ec2-44-206-11-200.compute-1.amazonaws.com",
         port: 5432,
-        // user: process.env.DB_USER,
-        user: "qzynksgchmpthq",
-        // password: process.env.DB_PASSWORD,
-        password: "1400068f4ff42f4b868af2b8d43925552679faaf52a117c55029981b75731ca1",
-        // database: process.env.DB_DATABASE
-        database: "d85q10umlu7bcn"
+        user: "sovxvdoykcwdpy",
+        password: "cc5a3fa0506ed5e1456ff496d7d8555e6918c0b01b61f19bb5342619865d4140",
+        database: "d2ddr1iqrev0v5"
     },
     ssl: {
         rejectUnauthorized: false
