@@ -4,7 +4,8 @@
   "description": "Projeto desenvolvido para o Hackathon Hack das Minas",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon ./src/index.js"
+    "dev": "nodemon ./src/index.js",
+    "start": "node ./src/index.js"
   },
   "author": "Equipe Atena",
   "license": "ISC",
