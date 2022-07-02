@@ -8,7 +8,8 @@ const knex = require('knex')({
         database: "d85q10umlu7bcn"
     },
     ssl: {
-        rejectUnauthorized: false
+        rejectUnauthorized: false,
+        require: true
     }
 });
 
